@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+int main(){
+    //a
+    string s1 = "hello";
+    string s2 = "world";
+    string s3 = s1+s2;
+    cout<<s3<<endl;
+   //b
+   reverse(s1.begin(),s1.end());
+   cout<<"the reversed string : "<<s1<<endl;
+   //c
+   string  vowels = "aeiouAEIOU";
+   string word = "hello world";
+   string result =" ";
+   for(char i : word){
+    if(vowels.find(i) == string::npos ){
+        result = result+i;
+    }
+   }
+   cout<<"string without vowels : "<<result<<endl;
+   //d
+   string not_sorted = s3;
+   string sorted = not_sorted;//making copy
+   sort(sorted.begin(),sorted.end());
+   cout<<"sorted string is : "<<sorted<<endl;
+
+   
+
+
+}
